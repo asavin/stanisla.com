@@ -1,0 +1,156 @@
+/*
+  Reset CSS
+  http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%;
+    font: inherit; */
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  /*  line-height: 1; */
+}
+ol, ul {
+  list-style: none;
+}
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'misoregular';
+    src: url('../fonts/miso-regular-webfont.eot');
+    src: url('../fonts/miso-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/miso-regular-webfont.woff2') format('woff2'),
+         url('../fonts/miso-regular-webfont.woff') format('woff'),
+         url('../fonts/miso-regular-webfont.ttf') format('truetype'),
+         url('../fonts/miso-regular-webfont.svg#misoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'misobold';
+    src: url('../fonts/miso-bold-webfont.eot');
+    src: url('../fonts/miso-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/miso-bold-webfont.woff2') format('woff2'),
+         url('../fonts/miso-bold-webfont.woff') format('woff'),
+         url('../fonts/miso-bold-webfont.ttf') format('truetype'),
+         url('../fonts/miso-bold-webfont.svg#misobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Styles desktop */
+
+body {
+  font-family: 'misoregular';
+}
+
+main {
+  text-align: center;
+  margin-top: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'misobold'
+}
+
+p {
+  font-size: 1em;
+}
+
+.pear {
+  display: inline-block;
+}
+
+.pear img {
+  width: 300px;
+}
+
+.description {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 70px;
+  line-height: 2em;
+}
+
+.description img.logo {
+  width: 140px;
+}
+
+a.ig {
+  margin-left: 5px;
+}
+
+.contact-details {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.pear-mobile {
+  display: none;
+}
+
+.pear-mobile img {
+  width: 180px;
+  margin-top: 40px;
+}
+
+/* Styles mobile */
+
+@media (max-width: 550px) {
+  .pear {
+    display: none;
+  }
+
+  .pear-mobile {
+    display: block;
+  }
+
+  .description {
+    display: block;
+  }
+
+  .contact-details {
+    text-align: center;
+  }
+
+}
